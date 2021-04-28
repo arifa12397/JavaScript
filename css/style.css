@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "lato";
+}
+
+.tabs-cover {
+  width: 80%;
+  height: 350px;
+  margin: 0px auto;
+  position: relative;
+  transition: .3s;
+}
+
+.tabs-cover ul {
+  display: flex;
+  border-bottom: 1px solid #C0C7D2;
+}
+
+.tabs-cover li {
+  list-style: none;
+}
+
+.tab-btn {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 12px;
+  color: #000;
+  background: transparent;
+  cursor: pointer;
+}
+
+.tab-btn .fa {
+  margin-right: 20px;
+}
+
+.tab-btn:hover .fa {
+  color: #6BDFFA;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.tab .tab-left {
+  flex-basis: 50%;
+}
+
+.tab .tab-right {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.tab .tab-right img {
+  width: 30%;
+  margin-top: -25%;
+  margin-right: -50%;
+}
+
+.tab .tab-left h2 {
+  margin-top: 5%;
+  margin-left: 10%;
+  font-size: 52px;
+  margin-bottom: 80px;
+}
+
+.tab .tab-left p {
+  margin-left: 10%;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.tab .tab-left .color {
+  color: #5217D4;
+}
+
+.tab .tab-left .color1 {
+  color: #6BDFFA;
+}
+
+.tab .tab-left .color2 {
+  color: #4D37F8;
+}
+
+.tab .tab-left a {
+  width: 150px;
+  display: block;
+  padding: 15px 20px;
+  border-radius: 38px;
+  text-decoration: none;
+  background: linear-gradient(to right, #6500DE, #396CF1);
+  color: #fff;
+  text-align: center;
+  margin-left: 10%;
+  font-size: 16px;
+}
+
+.tab .tab-left a:hover {
+  color: #fff;
+  background: linear-gradient(to right, #396CF1, #6500DE);
+  border: 1px solid #4D37F8;
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /***********start***************/
+  .tab {
+    display: none;
+    align-items: center;
+    margin: 5% auto;
+  }
+
+  .tab .tab-right {
+    text-align: center;
+  }
+
+  .tab .tab-right img {
+    width: 80%;
+    margin-top: 20%;
+    margin-right: 0%;
+  }
+
+  .tab .tab-left a {
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+
+  /***********end***************/
